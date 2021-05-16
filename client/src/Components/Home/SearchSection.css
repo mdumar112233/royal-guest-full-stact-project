@@ -1,0 +1,13 @@
+.select-guest{
+    box-shadow: 0 0 7px 2px #f5f5f5;
+}
+.btn:focus{
+    outline: unset;
+    box-shadow: unset;
+}
+#headingOne{
+    border-bottom: 1px solid rgb(173, 173, 173) !important;
+}
+.dropdown-btn{
+    margin-left: -20px;
+}
