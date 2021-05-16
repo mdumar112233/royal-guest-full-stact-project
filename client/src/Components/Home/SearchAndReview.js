@@ -8,8 +8,7 @@ import {
   } from '@material-ui/pickers';
 import downArrow from '../../images/down-arrow.png';
 import upArrow from '../../images/upload.png';
-import plus from '../../images/plus.png';
-import minus from '../../images/remove.png';
+import search from '../../images/loupe.png';
 import './SearchSection.css';
 
 const SearchAndReview = () => {
@@ -79,7 +78,7 @@ const SearchAndReview = () => {
                             <div class="card-header border-0" id="headingOne" style={{height: '100px',background: '#fff'}}>
                             <h2 class="mb-0">
                                 <button class="btn  btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <p style={{marginLeft: '-15px'}}>Guest</p>
+                                <p className='text-secondary' style={{marginLeft: '-15px'}}>Guest</p>
                                 <div className="dropdown-btn d-flex justify-content-between">
                                     <div className="guest-count">
                                     <p style={{width: '150px'}}>1 ADULTS, 1 CHILD</p>
@@ -91,10 +90,43 @@ const SearchAndReview = () => {
                                 </button>
                             </h2>
                             </div>
-
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
-                                Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                                <div className="adult-member d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 >ADULTS</h6>
+                                    </div>
+                                    <div className='minus-plus-count d-flex'>
+                                        <button className='minus-btn'>-</button>
+                                        <input className='input-align ml-4' type="text" value='1' />
+                                        <button className='plus-btn ml-4'>+</button>
+                                    </div>
+                                </div>
+                                <div className="child-member d-flex justify-content-between mt-3 mb-3">
+                                    <div>
+                                        <h6>CHILD</h6>
+                                        <p className='text-secondary'>Age 2-12</p>
+                                    </div>
+                                    <div className='minus-plus-count d-flex'>
+                                        <button className='minus-btn'>-</button>
+                                        <input className='input-align ml-4' type="text" value='1' />
+                                        <button className='plus-btn ml-4'>+</button>
+                                    </div>
+                                </div>
+                                <div className="babies-member d-flex justify-content-between">
+                                    <div>
+                                        <h6>BABIES</h6>
+                                        <p className='text-secondary'>Younger than 2</p>
+                                    </div>
+                                    <div className='minus-plus-count d-flex align-items-center'>
+                                        <button className='minus-btn'>-</button>
+                                        <input className='input-align ml-4' type="text" value='1' />
+                                        <button className='plus-btn ml-4'>+</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
+                                </div>
                             </div>
                             </div>
                         </div>
