@@ -11,6 +11,7 @@ import upArrow from '../../images/upload.png';
 import search from '../../images/loupe.png';
 import rightArrow from '../../images/right-arrow.png';
 import './SearchSection.css';
+import Review from './Review/Review';
 
 const SearchAndReview = () => {
     
@@ -138,9 +139,9 @@ const SearchAndReview = () => {
                 <div className="d-flex justify-content-between mt-5">
                             <div className='ml-4'><h3>Experience</h3></div>
                             <div className='text-right'><a href="#">see all <img src={rightArrow} alt="" /></a></div>
-                        </div>
+                </div>
                     <div className="row">
-                        
+                        <Review></Review>
                     </div>
                 </div>
             </div>
