@@ -9,6 +9,7 @@ import {
 import downArrow from '../../images/down-arrow.png';
 import upArrow from '../../images/upload.png';
 import search from '../../images/loupe.png';
+import rightArrow from '../../images/right-arrow.png';
 import './SearchSection.css';
 
 const SearchAndReview = () => {
@@ -134,7 +135,13 @@ const SearchAndReview = () => {
                     </div>
                 </div>
                 <div className="col-md-8 review-section">
-
+                <div className="d-flex justify-content-between mt-5">
+                            <div className='ml-4'><h3>Experience</h3></div>
+                            <div className='text-right'><a href="#">see all <img src={rightArrow} alt="" /></a></div>
+                        </div>
+                    <div className="row">
+                        
+                    </div>
                 </div>
             </div>
         </div>
