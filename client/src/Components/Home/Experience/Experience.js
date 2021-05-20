@@ -1,12 +1,24 @@
 import React from 'react';
+import './Experience.css';
 
 const Experience = (props) => {
-    const {name} = props.review;
-    // console.log(name)
+    const {name, image, location, rating, price} = props.review;
     return (
-        <div>
-            {/* <p>{name}</p>
-            <h3>This experience</h3> */}
+        <div className='experience-container'>
+            <div className='experience'>
+                <img className='rounded' src={image} alt="" />
+                <h6 className='mt-2'>{location}</h6>
+                <h5>{name}</h5>
+                <p className='text-secondary'>{price}</p>
+                <div className='rating-section'>
+                    <span><img src={rating} alt="" /></span>
+                    <span><img src={rating} alt="" /></span>
+                    <span><img src={rating} alt="" /></span>
+                    <span><img src={rating} alt="" /></span>
+                    <span><img src={rating} alt="" /></span>
+                    <span className='ml-2'>43</span>
+                </div>
+            </div>
         </div>
     );
 };

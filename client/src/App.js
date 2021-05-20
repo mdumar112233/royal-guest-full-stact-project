@@ -4,8 +4,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
+import Home from './Components/Home/Home/Home';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Home/>
         </Route>
         <Route path='/home'>
-          <Home/>
+          <Home></Home>
         </Route>
         <Route path='*'>
           <NotFound/>
