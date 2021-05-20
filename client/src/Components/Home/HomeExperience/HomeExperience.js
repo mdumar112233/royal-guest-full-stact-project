@@ -4,7 +4,7 @@ import './HomeExperience.css';
 const HomeExperience = (props) => {
     const {name, image, location, rating, price} = props.review;
     return (
-        <div className='experience-container'>
+        <div className='experience-container mb-5'>
             <div className='home-experience'>
                 <img className='rounded' src={image} alt="" />
                 <h6 className='mt-2'>{location}</h6>

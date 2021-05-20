@@ -41,10 +41,10 @@ const SearchAndReview = () => {
                         <h6>LOCATION</h6>
                         <input className='search-input' type="text" placeholder='Add city, Landmark, or address'/>
                     </div>
-                    <div className="set-date" style={{width: '300px'}}>
+                    <div className="set-date mb-3" style={{width: '350px'}}>
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
                         <Grid container justify="space-around">
-                            <div style={{width: '130px'}}>
+                            <div className='checkIn-date' style={{width: '175px'}}>
                                 <KeyboardDatePicker
                                 disableToolbar
                                 variant="inline"
@@ -59,7 +59,7 @@ const SearchAndReview = () => {
                                 }}
                                 />
                             </div>
-                            <div style={{width: '130px', textAlign: 'left'}}>
+                            <div className='checkOut-date' style={{width: '175px', textAlign: 'left'}}>
                                 <KeyboardDatePicker
                                 margin="normal"
                                 id="date-picker-dialog"

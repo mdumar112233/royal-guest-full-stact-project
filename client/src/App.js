@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import NotFound from './Components/NotFound/NotFound';
 import Home from './Components/Home/Home/Home';
+import AllResult from './Components/SearchResult/AllResult/AllResult';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path='/home'>
           <Home></Home>
+        </Route>
+        <Route path='/searchResult'>
+          <AllResult/>
         </Route>
         <Route path='*'>
           <NotFound/>
