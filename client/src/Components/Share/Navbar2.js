@@ -5,7 +5,7 @@ import searchIcon from '../../images/search.png';
 
 const Navbar2 = () => {
     return (
-        <div className='header2-container'>
+        <div className='header-container'>
             <div className="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <Link class="navbar-brand" to="/" style={{color: '#05396B', fontWeight: 'bold', fontSize: '30px'}}>Royal Guest</Link>
@@ -18,7 +18,7 @@ const Navbar2 = () => {
                             <input className='search-input text-center' type="text" value='hello'/>
                             <input className='search-input text-center' type="text" value='hello'/>
                             <input className='search-input text-center' type="text" value='hello'/>
-                            <span><img src={searchIcon} alt="" /></span>
+                            <span className='p-3'><img src={searchIcon} alt="" /></span>
                         </li>
                         <li class="nav-item">
                             <Link class="nav-link" to="*">Help</Link>
