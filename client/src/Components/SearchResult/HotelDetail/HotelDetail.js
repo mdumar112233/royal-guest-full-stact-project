@@ -3,9 +3,13 @@ import { useHistory } from 'react-router';
 import './HotelDetail.css';
 
 const HotelDetail = (props) => {
-    const {image, name, capacity, extra, cancel, rating, price} = props.detail;
+    const {id,image, name, capacity, extra, cancel, rating, price} = props.detail;
 
     const history = useHistory();
+    const handleHotelInfo = () => {
+        const url = `/singleHotel/${id}`;
+        history.push(url)
+    }
     return (
         <div onClick={handleHotelInfo} className='d-flex detail-container mt-4'>
             <div className='hotel-image'>
@@ -22,7 +26,7 @@ const HotelDetail = (props) => {
                         <span>4.6(32)</span>
                     </div>
                     <div>
-                        <h5 className='price'>{price}</h5>
+                        <h5 className='price'>${price}/Night</h5>
                         <h6 className='total'>173 total</h6>
                     </div>
                 </div>

@@ -11,3 +11,8 @@
     color: #fff;
     transition: 0.5s all;
 }
+.map-image img{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
