@@ -1,0 +1,25 @@
+.detail-container{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+    cursor: pointer;
+}
+.hotel-image img{
+    height: 142px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.hotel-info p{
+    margin: 4px 0;
+    padding: 0;
+    font-size: 14px;
+    color: gray;
+}
+.hotel-info{
+    margin: 20px 0;
+}
+.price{
+    font-size: 15px;
+}
+.total{
+    font-size: 12px;
+    color: gray;
+}

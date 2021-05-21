@@ -1,0 +1,13 @@
+.feature-btn{
+    color: gray;
+    background: transparent;
+    padding: 4px 7px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.feature-btn:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.5s all;
+}

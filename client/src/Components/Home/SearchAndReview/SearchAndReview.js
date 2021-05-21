@@ -13,6 +13,8 @@ import rightArrow from '../../../images/right-arrow.png';
 import './SearchSection.css';
 import Review from '../Review/Review';
 import HomeReview from '../HomeReview/HomeReview';
+import { Link } from '@material-ui/core';
+import { useHistory } from 'react-router';
 
 const SearchAndReview = () => {
     
@@ -32,6 +34,11 @@ const SearchAndReview = () => {
         newDates.checkOut = date;
         setSelectedDate(newDates);
     };
+
+    const history = useHistory();
+    const handleSearch = () => {
+        history.push('./searchResult')
+    }
     return (
         <div className='container'>
             <div className="row">
@@ -128,7 +135,7 @@ const SearchAndReview = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <button className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
+                                    <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
                                 </div>
                             </div>
                             </div>

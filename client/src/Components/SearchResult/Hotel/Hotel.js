@@ -7,6 +7,7 @@ import home4 from '../../../images/home4.jpeg';
 import home5 from '../../../images/home5.jpeg';
 import home6 from '../../../images/home6.jpeg';
 import HotelDetail from '../HotelDetail/HotelDetail';
+import './Hotel.css';
 
 
 const hotelInfo = [
@@ -72,12 +73,21 @@ const Hotel = () => {
     return (
         <div className='container'>
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-7 mt-2">
+                    <p>234 stays may 13-12 3 guests</p>
+                    <h4>Stay in Dhaka Division</h4>
+                    <div>
+                        <span><button className='feature-btn'>Cancellation</button></span>
+                        <span><button className='feature-btn'>Type of place</button></span>
+                        <span><button className='feature-btn'>Price</button></span>
+                        <span><button className='feature-btn'>Instant Book</button></span>
+                        <span><button className='feature-btn'>More Filters</button></span>
+                    </div>
                     {
                         hotelInfo.map(detail => <HotelDetail detail={detail}></HotelDetail>)
                     }
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-5">
                         
                 </div>
             </div>
