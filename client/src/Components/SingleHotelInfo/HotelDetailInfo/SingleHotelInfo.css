@@ -2,4 +2,61 @@
     height: 70px;
     width: 70px;
     border-radius: 50%;
+    object-fit: cover;
+}
+.room-info{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+    margin-bottom: 40px;
+}
+.room-feature{
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+}
+.room-feature img{
+    height: 18px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.room-feature p{
+    margin: 0;
+    padding: 0;
+}
+.reserve-info{
+    width: 445px;
+    height: auto;
+    box-shadow: 0 0 7px 2px #f5f5f5;
+    margin: 80px auto;
+    padding: 35px;
+    border-radius: 5px;
+}
+.date-section{
+    border: 1px solid rgba(128, 128, 128, 0.384);
+    border-radius: 4px;
+    padding-top: 8px;
+}
+.date-section img{
+    height: 16px;
+}
+select{
+    background: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.384);
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+.pricing{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+    padding: 8px 0;
+}
+.pricing p{
+    margin: 0;
+    padding: 0;
+}
+.reserve-btn{
+    background: #05396B;
+    padding: 12px;
+    width: 100%;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
 }
