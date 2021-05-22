@@ -7,6 +7,7 @@ import single from '../../../images/single-01.png';
 import home from '../../../images/home.png';
 import rightArrow from '../../../images/right-arrow(1).png';
 import './SingleHotelInfo.css';
+import { useHistory } from 'react-router';
 
 const SigleHotelInfo = () => {
     const {id} = useParams();
@@ -17,6 +18,12 @@ const SigleHotelInfo = () => {
         .then(res => res.json())
         .then(data => setHotelInfo(data[0]))
     }, [id])
+
+    const history = useHistory();
+    const handleReserve = () => {
+        const url = `/booking/${id}`;
+        history.push(url);
+    }
 
     return (
         <div>
@@ -118,7 +125,7 @@ const SigleHotelInfo = () => {
                                 <h6>Total</h6>
                                 <p>$167</p>
                             </div>
-                            <button className='reserve-btn'>Reserve</button>
+                            <button onClick={handleReserve}  className='reserve-btn'>Reserve</button>
                             <p className='text-center mt-3'>you won't charged</p>
                         </div>
                     </div>

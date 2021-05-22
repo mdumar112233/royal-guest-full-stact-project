@@ -5,6 +5,7 @@
     color: #000 !important;
     padding: 15px 20px;
     margin-left: 10px;
+    cursor: pointer;
 }
 .signUp-btn{
     background: #05396B;

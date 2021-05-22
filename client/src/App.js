@@ -8,6 +8,7 @@ import NotFound from './Components/NotFound/NotFound';
 import Home from './Components/Home/Home/Home';
 import AllResult from './Components/SearchResult/AllResult/AllResult';
 import AllHotelInfo from './Components/SingleHotelInfo/AllHotelInfo/AllHotelInfo';
+import HouseReview from './Components/Booking/HouseReview/HouseReview';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path='/singleHotel/:id'>
           <AllHotelInfo/>
+        </Route>
+        <Route path='/booking/:id'>
+          <HouseReview/>
         </Route>
         <Route path='*'>
           <NotFound/>

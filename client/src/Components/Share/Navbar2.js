@@ -2,13 +2,18 @@ import { Link } from '@material-ui/core';
 import React from 'react';
 import './Navbar2.css';
 import searchIcon from '../../images/search.png';
+import { useHistory } from 'react-router';
 
 const Navbar2 = () => {
+    const history = useHistory();
+    const handleLogo = () => {
+        history.push('/');
+    }
     return (
         <div className='header-container'>
             <div className="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <Link class="navbar-brand" to="/" style={{color: '#05396B', fontWeight: 'bold', fontSize: '30px'}}>Royal Guest</Link>
+                    <Link onClick={handleLogo} class="navbar-brand" to="/" style={{color: '#05396B', fontWeight: 'bold', fontSize: '30px', cursor: 'pointer'}}>Royal Guest</Link>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
