@@ -1,0 +1,12 @@
+.payment-card{
+    border: 1px solid rgba(128, 128, 128, 0.377);
+    padding: 20px;
+    border-radius: 4px;
+}
+.payment-btn{
+    color: #fff;
+    background: #05396B;
+    border: 0;
+    padding: 8px 13px;
+    border-radius: 4px;
+}

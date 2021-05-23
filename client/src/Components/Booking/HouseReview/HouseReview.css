@@ -1,0 +1,30 @@
+.CheckIn-CheckOut p{
+    margin: 0;
+    padding: 0;
+}
+.day-date{
+    background: rgba(128, 128, 128, 0.315);
+    padding: 8px 13px 0 13px;
+    text-align: center;
+    border-radius: 3px;
+}
+.set-date{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.582);
+}
+.house-rule{
+    margin: 20px 0;
+}
+.house-rule img{
+    height: 35px;
+    border: 1px solid rgba(128, 128, 128, 0.384);
+    padding: 8px;
+    border-radius: 3px;
+}
+.booking-btn{
+    background: #05396B;
+    border: 0;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}

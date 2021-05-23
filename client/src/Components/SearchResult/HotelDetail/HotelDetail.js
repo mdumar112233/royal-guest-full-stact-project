@@ -23,7 +23,7 @@ const HotelDetail = (props) => {
                 <div className='d-flex justify-content-between'>
                     <div>
                         <img src={rating} alt="" />
-                        <span>4.6(32)</span>
+                        <span className='ml-1'>5 (232)</span>
                     </div>
                     <div>
                         <h5 className='price'>${price}/Night</h5>

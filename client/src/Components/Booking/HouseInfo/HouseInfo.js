@@ -20,7 +20,7 @@ const HouseInfo = () => {
                             <div className="d-flex justify-content-between">
                                 <div>
                                     <h4>{hotelInfo.name}</h4>
-                                    <img className='mb-1' src={hotelInfo.rating} alt="" /><span className='ml-1'>4.9(20 reviews)</span>
+                                    <img className='mb-1' src={hotelInfo.rating} alt="" /><span className='ml-1'>5 (232 reviews)</span>
                                     </div>
                                 <img style={{height: '100px', borderRadius: '4px'}} src={hotelInfo.image} alt="" />
                             </div>
@@ -34,6 +34,7 @@ const HouseInfo = () => {
                             </div>
                             <p className='mt-3'>Guest</p>
                             <select name="" id="">
+                                <option value="1 guest">1 guest</option>
                                 <option value="2 guest">2 guest</option>
                                 <option value="3 guest">3 guest</option>
                                 <option value="4 guest">4 guest</option>

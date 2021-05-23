@@ -9,6 +9,9 @@ import Home from './Components/Home/Home/Home';
 import AllResult from './Components/SearchResult/AllResult/AllResult';
 import AllHotelInfo from './Components/SingleHotelInfo/AllHotelInfo/AllHotelInfo';
 import HouseReview from './Components/Booking/HouseReview/HouseReview';
+import SelfInfo from './Components/Booking/SelfInfo/SelfInfo';
+import Payment from './Components/Booking/Payment/Payment';
+import CheckPayment from './Components/Booking/CheckPayment/CheckPayment';
 
 function App() {
   return (
@@ -28,6 +31,15 @@ function App() {
         </Route>
         <Route path='/booking/:id'>
           <HouseReview/>
+        </Route>
+        <Route path='/selfInfo/:id'>
+          <SelfInfo/>
+        </Route>
+        <Route path='/payment/:id'>
+          <Payment/>
+        </Route>
+        <Route path='/checkPayment/:id'>
+          <CheckPayment/>
         </Route>
         <Route path='*'>
           <NotFound/>
