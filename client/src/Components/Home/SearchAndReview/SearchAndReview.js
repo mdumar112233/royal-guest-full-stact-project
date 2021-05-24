@@ -13,16 +13,26 @@ import rightArrow from '../../../images/right-arrow.png';
 import './SearchSection.css';
 import Review from '../Review/Review';
 import HomeReview from '../HomeReview/HomeReview';
-import { Link } from '@material-ui/core';
 import { useHistory } from 'react-router';
 
 const SearchAndReview = () => {
-    
+    const [location, setLocation] = useState({
+        location: '',
+        success: true,
+        isValue: null
+    });
+
+
+    sessionStorage.setItem('location', location.location);
+
     const [selectedDate, setSelectedDate] = useState({
         checkIn: new Date(),
         checkOut: new Date()
     });
     console.log(selectedDate)
+
+    sessionStorage.setItem('checkIn', selectedDate.checkIn);
+    sessionStorage.setItem('checkOut', selectedDate.checkOut);
 
     const handleCheckInDate = (date) => {
         const newDates = {...selectedDate}
@@ -35,9 +45,22 @@ const SearchAndReview = () => {
         setSelectedDate(newDates);
     };
 
+    const handleLocation = (e) => {
+        console.log(e.target.value);
+        const newInfo = {...location};
+        newInfo[e.target.name] = e.target.value;
+        setLocation(newInfo); 
+        newInfo.isValue = true;
+        newInfo.success = false;
+    }
+
     const history = useHistory();
     const handleSearch = () => {
-        history.push('./searchResult')
+        if(location.success){
+            alert('enter location and date') 
+            history.push('./searchResult')
+        }
+        
     }
     return (
         <div className='container'>
@@ -45,8 +68,10 @@ const SearchAndReview = () => {
                 <div className="col-md-4  search-section">
                     <h5 className='mt-5 mb-4'>Where do you want to go</h5>
                     <div className="location-bar mt-3 mb-3">
+                        <form action=""  required>
                         <h6>LOCATION</h6>
-                        <input className='search-input' type="text" placeholder='Add city, Landmark, or address'/>
+                            <input onBlur={handleLocation} name='location' className='search-input' type="text" placeholder='Add city, Landmark, or address' required/>
+                        </form>
                     </div>
                     <div className="set-date mb-3" style={{width: '350px'}}>
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
@@ -135,7 +160,9 @@ const SearchAndReview = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
+                                    {
+                                        !location.isValue ?  <button  className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button> : <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
+                                    }
                                 </div>
                             </div>
                             </div>

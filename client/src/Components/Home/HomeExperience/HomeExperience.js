@@ -2,7 +2,7 @@ import React from 'react';
 import './HomeExperience.css';
 
 const HomeExperience = (props) => {
-    const {name, image, location, rating, price} = props.review;
+    const {name, image, location, rating, price,review} = props.review;
     return (
         <div className='experience-container mb-5'>
             <div className='home-experience'>
@@ -16,7 +16,7 @@ const HomeExperience = (props) => {
                     <span><img src={rating} alt="" /></span>
                     <span><img src={rating} alt="" /></span>
                     <span><img src={rating} alt="" /></span>
-                    <span className='ml-2'>43</span>
+                    <span className='ml-2'>{review}</span>
                 </div>
             </div>
         </div>

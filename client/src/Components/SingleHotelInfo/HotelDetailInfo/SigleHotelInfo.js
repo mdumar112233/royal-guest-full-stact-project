@@ -89,14 +89,14 @@ const SigleHotelInfo = () => {
                         <div className="room-review mb-5">
                             <h6 className='font-weight-bold'>Reviews</h6>
                             <img src={hotelInfo.rating} alt="" />
-                            <span>5(232)</span>
+                            <span>5 (232)</span>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="reserve-info">
                             <h4>$34/<span style={{fontWeight: '300'}}>Night</span></h4>
                             <img className='mb-1' src={hotelInfo.rating} alt="" />
-                            <span className='ml-1'>5 (20 reviews)</span>
+                            <span className='ml-1'>5 (232 reviews)</span>
                             <h6 className='mt-3'>Dates</h6>
                             <div className='d-flex justify-content-around date-section'>
                                 <h6 className='text-secondary'>2/3/2021</h6>

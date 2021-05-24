@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import home1 from '../../../images/home1.jpeg';
+import home2 from '../../../images/home2.jpeg';
+import home3 from '../../../images/home3.jpeg';
+import home4 from '../../../images/home4.jpeg';
+import home5 from '../../../images/home5.jpeg';
+import home6 from '../../../images/home6.jpeg';
 import ItemsCarousel from 'react-items-carousel';
 import HomeExperience from '../HomeExperience/HomeExperience';
 import star from '../../../images/star.png';
@@ -12,37 +17,50 @@ const homeReview = [
     {
         image : home1,
         location: 'ENTERTAINMENT - VANCOUVER',
-        name: "Discover the city's party scene",
+        name: "Apartment in Lost Panorama",
         price: '$3 per person',
-        rating: star
+        rating: star,
+        review: 35
     },
     {
-        image : home1,
+        image : home2,
         location: 'ENTERTAINMENT - VANCOUVER',
-        name: "Discover the city's party scene",
+        name: "Light bright airy stylish apt & safe peaceful stay",
         price: '$3 per person',
-        rating: star
+        rating: star,
+        review: 42
     },
     {
-        image : home1,
+        image : home3,
         location: 'ENTERTAINMENT - VANCOUVER',
-        name: "Discover the city's party scene",
+        name: "AR Lounge & Pool(r&r + b&b)",
         price: '$3 per person',
-        rating: star
+        rating: star,
+        review: 63
     },
     {
-        image : home1,
+        image : home4,
         location: 'ENTERTAINMENT - VANCOUVER',
-        name: "Discover the city's party scene",
+        name: "Tree house",
         price: '$3 per person',
-        rating: star
+        rating: star,
+        review: 24
     },
     {
-        image : home1,
+        image : home5,
         location: 'ENTERTAINMENT - VANCOUVER',
-        name: "Discover the city's party scene",
+        name: "Cob cottage",
         price: '$3 per person',
-        rating: star
+        rating: star,
+        review: 88
+    },
+    {
+        image : home6,
+        location: 'ENTERTAINMENT - VANCOUVER',
+        name: "Hillvilla",
+        price: '$3 per person',
+        rating: star,
+        review: 48
     }
 ]
 const HomeReview = () => {
