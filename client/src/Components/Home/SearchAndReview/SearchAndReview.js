@@ -160,9 +160,10 @@ const SearchAndReview = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    {
+                                    {/* {
                                         !location.isValue ?  <button  className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button> : <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
-                                    }
+                                    } */}
+                                    <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
                                 </div>
                             </div>
                             </div>

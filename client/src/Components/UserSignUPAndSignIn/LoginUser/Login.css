@@ -1,0 +1,39 @@
+.login-section {
+    margin-top: 9rem;
+    background-color: #bdc3c7;
+    width: 400px;
+    height: 340px;
+    padding: 20px;
+    margin-left: 30rem;
+    border-radius: 5px;
+}
+.login-section img{
+    height: 30px;
+    margin-right: 10px;
+}
+.login-user img{
+    height: 30px;
+    margin-right: 10px;
+}
+.login-btn{
+    background-color: transparent;
+    border: 0;
+}
+.signIn{
+    width: 200px;
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+    background-color: #bdc3c7;
+    width: 400px;
+    height: 340px;
+    padding: 20px;
+    margin-left: 30rem;
+    border-radius: 5px;
+}

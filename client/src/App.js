@@ -12,9 +12,16 @@ import HouseReview from './Components/Booking/HouseReview/HouseReview';
 import SelfInfo from './Components/Booking/SelfInfo/SelfInfo';
 import Payment from './Components/Booking/Payment/Payment';
 import CheckPayment from './Components/Booking/CheckPayment/CheckPayment';
+import CreateAccount from './Components/UserSignUPAndSignIn/LoginUser/CreateAccount';
+import Login from './Components/UserSignUPAndSignIn/LoginUser/Login';
+import { createContext } from 'react';
+
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
     <Router>
       <Switch>
         <Route exact path='/'>
@@ -41,11 +48,18 @@ function App() {
         <Route path='/checkPayment/:id'>
           <CheckPayment/>
         </Route>
+        <Route path='/createAccount'>
+          <CreateAccount/>
+        </Route>
+        <Route path='/login'>
+          <Login/>
+        </Route>
         <Route path='*'>
           <NotFound/>
         </Route>
       </Switch>
     </Router>
+    </UserContext.Provider>
   );
 }
 
