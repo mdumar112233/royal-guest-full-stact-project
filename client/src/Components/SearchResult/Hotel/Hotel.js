@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';ail';
+import React, { useEffect, useState } from 'react';
 import map from '../../../images/map-img.png';
 import './Hotel.css';
 
