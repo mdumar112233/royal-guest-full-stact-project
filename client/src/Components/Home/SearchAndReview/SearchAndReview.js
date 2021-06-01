@@ -56,11 +56,7 @@ const SearchAndReview = () => {
 
     const history = useHistory();
     const handleSearch = () => {
-        if(location.success){
-            alert('enter location and date') 
             history.push('./searchResult')
-        }
-        
     }
     return (
         <div className='container'>
@@ -160,10 +156,10 @@ const SearchAndReview = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    {/* {
+                                    {
                                         !location.isValue ?  <button  className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button> : <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
-                                    } */}
-                                    <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
+                                    }
+                                    {/* <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button> */}
                                 </div>
                             </div>
                             </div>

@@ -1,6 +1,6 @@
 .login-section {
     margin-top: 9rem;
-    background-color: #bdc3c7;
+    border: 2px solid rgb(12, 65, 95);
     width: 400px;
     height: 340px;
     padding: 20px;
@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     margin-top: 9rem;
-    background-color: #bdc3c7;
+    border: 2px solid rgb(12, 65, 95);
     width: 400px;
     height: 340px;
     padding: 20px;

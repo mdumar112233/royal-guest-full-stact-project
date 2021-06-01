@@ -92,10 +92,11 @@ const Login = () => {
                 {
                     user.success && <p style={{color:'green'}}>user login successfully</p>
                 }
-                <input className='me-5 mb-4' type="submit" value="login"/> <span><Link to='/createAccount'>Sign up</Link></span>
+                <input className='me-5 mb-4' type="submit" value="login"/> <span className='ml-5'><Link to='/createAccount'>Sign up</Link></span>
             </form>
             <div className="signIn login-user">
-                    <span> <img src={googleIcon} alt=""/></span>  <input className='login-btn' onClick={handleSignIn} type="button" value='Login with Google'/>
+                    {/* <span> <img src={googleIcon} alt=""/></span>   */}
+                    <input className='login-btn' onClick={handleSignIn} type="button" value='Login with Google'/>
             </div>
             </div>
         </div>

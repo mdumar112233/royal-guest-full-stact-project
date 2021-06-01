@@ -90,7 +90,8 @@ const CreateAccount = () => {
                 user.isSignUp && <Redirect to='/login'/>
             }
                 <div className="signIn">
-                    <span> <img src={googleIcon} alt=""/></span>  <input className='login-btn' onClick={handleSignIn} type="button" value='Login with Google'/>
+                    {/* <span> <img src={googleIcon} alt=""/></span>   */}
+                    <input className='login-btn' onClick={handleSignIn} type="button" value='Login with Google'/>
                 </div>
             </div>
         </div>
