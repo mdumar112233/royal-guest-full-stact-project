@@ -14,7 +14,7 @@ const SigleHotelInfo = () => {
     const [hotelInfo, setHotelInfo] = useState({});
 
     useEffect(() => {
-        fetch(`https://aqueous-plains-17787.herokuapp.com/${id}`)
+        fetch(`https://aqueous-plains-17787.herokuapp.com/singleHotel/${id}`)
         .then(res => res.json())
         .then(data => setHotelInfo(data[0]))
     }, [id])
