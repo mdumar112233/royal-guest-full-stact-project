@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ca58d64.chunk.css",
-    "main.js": "/static/js/main.ab82db38.chunk.js",
-    "main.js.map": "/static/js/main.ab82db38.chunk.js.map",
+    "main.css": "/static/css/main.fcf89178.chunk.css",
+    "main.js": "/static/js/main.73000558.chunk.js",
+    "main.js.map": "/static/js/main.73000558.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.54d8f73a.js",
     "runtime-main.js.map": "/static/js/runtime-main.54d8f73a.js.map",
     "static/js/2.5e5f826a.chunk.js": "/static/js/2.5e5f826a.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.2f6a4c18.chunk.js": "/static/js/3.2f6a4c18.chunk.js",
     "static/js/3.2f6a4c18.chunk.js.map": "/static/js/3.2f6a4c18.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.3ca58d64.chunk.css.map": "/static/css/main.3ca58d64.chunk.css.map",
+    "static/css/main.fcf89178.chunk.css.map": "/static/css/main.fcf89178.chunk.css.map",
     "static/js/2.5e5f826a.chunk.js.LICENSE.txt": "/static/js/2.5e5f826a.chunk.js.LICENSE.txt",
     "static/media/47498481-a-portrait-of-a-men-in-studio-gray-background.cb5cf8ed.jpg": "/static/media/47498481-a-portrait-of-a-men-in-studio-gray-background.cb5cf8ed.jpg",
     "static/media/ex-1.9839f0bd.jpeg": "/static/media/ex-1.9839f0bd.jpeg",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.54d8f73a.js",
     "static/js/2.5e5f826a.chunk.js",
-    "static/css/main.3ca58d64.chunk.css",
-    "static/js/main.ab82db38.chunk.js"
+    "static/css/main.fcf89178.chunk.css",
+    "static/js/main.73000558.chunk.js"
   ]
 }

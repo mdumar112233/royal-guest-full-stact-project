@@ -13,12 +13,15 @@ const Hotel = () => {
         .then(res => res.json())
         .then(data => setHotelInfo(data))
     }, [])
+
+    const locationName = sessionStorage.getItem('location');
+    ;
     return (
         <div className='container'>
             <div className="row">
                 <div className="col-md-7 mt-2">
                     <p>234 stays may 13-12 3 guests</p>
-                    <h4>Stay in Dhaka Division</h4>
+                    <h4>Stay in {locationName}</h4>
                     <div>
                         <span><button className='feature-btn'>Cancellation</button></span>
                         <span><button className='feature-btn'>Type of place</button></span>
