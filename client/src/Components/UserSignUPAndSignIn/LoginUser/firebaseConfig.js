@@ -1,4 +1,4 @@
-  const firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyDFJc51scRFtsvQnEdq-AR0y7PFrMczvwU",
     authDomain: "royal-guest-team.firebaseapp.com",
     projectId: "royal-guest-team",

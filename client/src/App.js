@@ -14,7 +14,8 @@ import Payment from './Components/Booking/Payment/Payment';
 import CheckPayment from './Components/Booking/CheckPayment/CheckPayment';
 import CreateAccount from './Components/UserSignUPAndSignIn/LoginUser/CreateAccount';
 import Login from './Components/UserSignUPAndSignIn/LoginUser/Login';
-import { createContext } from 'react';
+import { createContext, useState } from 'react';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -31,11 +32,11 @@ function App() {
           <Home></Home>
         </Route>
         <Route path='/searchResult'>
-          <AllResult/>
+          <AllResult/> 
         </Route>
-        <Route path='/singleHotel/:id'>
+        <PrivateRoute path='/singleHotel/:id'>
           <AllHotelInfo/>
-        </Route>
+        </PrivateRoute>
         <Route path='/booking/:id'>
           <HouseReview/>
         </Route>

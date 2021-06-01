@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import firebase from "firebase/app";
 import "firebase/auth";
-import googleIcon from '../../image/googleIcon.png';
+import googleIcon from '../../../images/googleIcon.png';
 import './Login.css';
 import { createAccountAndLogin, initializeFirebase } from './LoginManager';
 import { Redirect, useHistory, useLocation } from 'react-router';

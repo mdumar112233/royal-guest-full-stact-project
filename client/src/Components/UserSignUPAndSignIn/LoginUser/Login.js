@@ -6,7 +6,7 @@ import "firebase/auth";
 import { initializeFirebase } from './LoginManager';
 import './Login.css';
 import { Link } from 'react-router-dom';
-import googleIcon from '../../image/googleIcon.png';
+import googleIcon from '../../../images/googleIcon.png';
 
 
 const Login = () => {
