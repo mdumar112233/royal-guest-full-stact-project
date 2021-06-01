@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import map from '../../../images/map-img.png';
+import HotelDetail from '../HotelDetail/HotelDetail';
 import './Hotel.css';
 
 
