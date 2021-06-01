@@ -9,7 +9,7 @@ import {
 import downArrow from '../../../images/down-arrow.png';
 import upArrow from '../../../images/upload.png';
 import search from '../../../images/loupe.png';
-import rightArrow from '../../../images/right-arrow.png';
+// import rightArrow from '../../../images/right-arrow.png';
 import './SearchSection.css';
 import Review from '../Review/Review';
 import HomeReview from '../HomeReview/HomeReview';
