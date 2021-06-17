@@ -14,7 +14,6 @@
 * Express.js
 * MongoDB
 * Firebase Authentication
-* Strip.js
 
 
 [Live Website](https://ak-inductry-auth.web.app/) | [Live API Server](https://calm-anchorage-95047.herokuapp.com/)
