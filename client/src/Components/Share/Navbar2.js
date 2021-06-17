@@ -10,6 +10,17 @@ const Navbar2 = () => {
         history.push('/');
     }
 
+    const login = useHistory();
+    const handleLogin = () => {
+        login.push('/login');
+    }
+
+    const singUp = useHistory();
+    const handleSignUp = () => {
+        singUp.push('/createAccount');
+    }
+    
+
     const checkIn = sessionStorage.getItem('checkIn');
     const checkOut = sessionStorage.getItem('checkOut');
 
@@ -43,10 +54,10 @@ const Navbar2 = () => {
                             <Link class="nav-link" to="*">Help</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" to="/login">Log in</Link>
+                            <Link class="nav-link" onClick={handleLogin} to="/login">Log in</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link ml-2 me-4 mt-1 signUp-btn" to="/signUp">Sign up</Link>
+                            <Link class="nav-link ml-2 me-4 mt-1 signUp-btn" onClick={handleSignUp} to="/createAccount">Sign up</Link>
                         </li>
                         </ul>
                     </div>

@@ -31,9 +31,9 @@ function App() {
         <Route path='/home'>
           <Home></Home>
         </Route>
-        <Route path='/searchResult'>
+        <PrivateRoute path='/searchResult'>
           <AllResult/> 
-        </Route>
+        </PrivateRoute>
         <Route path='/singleHotel/:id'>
           <AllHotelInfo/>
         </Route>
