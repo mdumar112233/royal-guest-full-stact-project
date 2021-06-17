@@ -19,7 +19,7 @@ const Payment = () => {
                 <div className='row'>
                     <div className="col-md-6">
                         <h6 className='mt-5'>1.Reviews house rules <span><img src={rightArrow} alt="" /></span> 2.Who's coming? <span><img src={rightArrow} alt="" /></span> 3.Confirm and pay</h6>
-                        <h4 className='mt-5'>Payment Selection</h4>
+                        <h4 className='mt-4'>Payment Selection</h4>
                         <div className='payment-card'>
                             <input type="radio" name='payment'/><span className='ml-2'>Credit Card</span>
                         </div>

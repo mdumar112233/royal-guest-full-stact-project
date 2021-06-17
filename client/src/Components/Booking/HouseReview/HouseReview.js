@@ -23,8 +23,10 @@ const HouseReview = () => {
             <div className="container">
                 <div className='row'>
                     <div className="col-md-6">
+
                         <h6 className='mt-5'>1.Reviews house rules <span><img src={rightArrow} alt="" /></span> 2.Who's coming? <span><img src={rightArrow} alt="" /></span> 3.Confirm and pay</h6>
-                        <h3 className='mt-3'>Review house rules</h3>
+                        <h3 className='mt-3 mb-4'>Review house rules</h3>
+
                         <h6>3 nights in Dhaka</h6>
                         <div className='set-date'>
                             <div className="d-flex justify-content-between mt-5">

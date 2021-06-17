@@ -54,6 +54,10 @@ const SearchAndReview = () => {
         newInfo.success = false;
     }
 
+    const handleValid = () => {
+        alert('Please enter your location');
+    }
+
     const history = useHistory();
     const handleSearch = () => {
             history.push('./searchResult')
@@ -157,13 +161,12 @@ const SearchAndReview = () => {
                                 </div>
                                 <div>
                                     {
-                                        !location.isValue ?  <button  className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button> : <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
+                                        !location.isValue ?  <button  className='search-btn' onClick={handleValid}> <span ><img src={search} alt="" /></span>  Search</button> : <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button>
                                     }
-                                    {/* <button onClick={handleSearch} className='search-btn'> <span ><img src={search} alt="" /></span>  Search</button> */}
                                 </div>
+                              </div>
                             </div>
-                            </div>
-                        </div>
+                          </div>
                         </div>
                     </div>
                 </div>

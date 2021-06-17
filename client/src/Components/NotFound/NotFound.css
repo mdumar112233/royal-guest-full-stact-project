@@ -1,0 +1,10 @@
+.not-found-container{
+    margin: 10rem 33rem;
+    text-align: center;
+}
+.not-found-container h2{
+    color: #05396B;
+}
+.not-found-container h3{
+    color: chocolate;
+}

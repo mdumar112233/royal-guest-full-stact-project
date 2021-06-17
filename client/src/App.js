@@ -34,9 +34,9 @@ function App() {
         <Route path='/searchResult'>
           <AllResult/> 
         </Route>
-        <PrivateRoute path='/singleHotel/:id'>
+        <Route path='/singleHotel/:id'>
           <AllHotelInfo/>
-        </PrivateRoute>
+        </Route>
         <Route path='/booking/:id'>
           <HouseReview/>
         </Route>

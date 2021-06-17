@@ -34,6 +34,7 @@ const SelfInfo = () => {
                             </div>
                         </div>   
                         <textarea className='text-area' placeholder="Hello Rowdra! Can't wait to spend 4 night is your home"></textarea> <br /> <br />
+
                         <button onClick={handleDescription} className='continue-btn'>continue</button>
                     </div>
                     <div className="col-md-6">

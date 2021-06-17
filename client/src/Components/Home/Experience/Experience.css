@@ -13,3 +13,30 @@
 .experience h6{
     font-size: 11px;
 }
+
+@media screen and (max-width: 768px){
+    .experience img{
+        height: 80px;
+    }
+    .rating-section img{
+        height: 16px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .experience img{
+        height: 70px;
+    }
+    .rating-section img{
+        height: 16px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .experience img{
+        height: 60px;
+    }
+    .rating-section img{
+        height: 16px;
+    }
+}

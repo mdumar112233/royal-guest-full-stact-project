@@ -73,8 +73,13 @@ const CreateAccount = () => {
           console.log(errorCode, errorMessage, email, credential);
         });
     }
+    const home = useHistory();
+    const handleHome = () => {
+        home.push('/')
+    }
     return (
         <div>
+            <a href='#' onClick={handleHome} className='back-to-home'>Back to home</a>
             <div className="login-section text-center">
                 <h2>Create Account</h2>
                 <form onSubmit={handleSubmit}>
