@@ -16,6 +16,7 @@
 * Firebase Authentication
 
 
-[Live Website](https://ak-inductry-auth.web.app/) | [Live API Server](https://calm-anchorage-95047.herokuapp.com/)
+[Live Website](https://royal-guest-team.web.app/) | [Live API Server](https://aqueous-plains-17787.herokuapp.com)
 
-[Back-end Repository](https://github.com/mdumar112233/ak-industry-assignment-11-server)
+
+[Back-end Repository](https://github.com/mdumar112233/royal-guest-full-stact-project/tree/main/server)
